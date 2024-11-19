@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #fd0000);
+    overflow: hidden;
+}
+
+#Word {
+    margin-top: -30%;
+    font-family:Edu AU VIC WA NT Pre, sans-serif;
+    font-size: 48px;
+    color: #0085f1;
+    margin-bottom: 20px;
+    filter: drop-shadow(2px 2px 2px rgb(5, 0, 0));
+    transition: 0.7s ease;
+}
+#Word:hover{
+    transform: scale(1.1);
+  }
+
+#image {
+    position: absolute;
+    filter: drop-shadow(0 0 5px rgb(56, 55, 55));
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.rotate {
+    animation: rotation 30s infinite linear;
+
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
